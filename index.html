@@ -8,93 +8,46 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color:gainsboro;
+            background-color:gainsboro; 
         }
 
-        .topnav {
-            position: relative;
+        .navbar {
             overflow: hidden;
             background-color: white;
         }
 
-        .topnav a {
+        .menu a {
             float: left;
             color: gray;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
-            display: block;
         }
 
-        .topnav a:hover {
+        .menu a:hover {
             background-color: gainsboro;
-            color: black;
+            color: gray;
         }
 
-        //:hover a.active {
-            background-color: orange;
-            color: yellow;
-            display: inline-block
-        }
-
-        .topnav-centered a {
+        .logo a {
             float: none;
             position: absolute;
-            top: 50%;
+            top: 3%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
         }
 
-        .topnav-right {
-            float: right;
-        }
-
-
-        @media screen and (max-width: 600px) {
-            .topnav a, .topnav-right {
-            float: none;
-            display: block;
-        }
-  
-        .topnav-centered a {
-            position: relative;
-            top: 0;
-            left: 0;
-            transform: none;
-        }
-
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: red;
-            color: white;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    
-
-<div class="topnav">
-    <div class="topnav-centered">
-      <a href="file:///C:/Users/Nicolas.Soriano/Documents/GitHub/Exit87BBQ/index.html" class="active">logo</a>
+    <div class="navbar">
+        <div class="menu">
+            <a href="#blank">Menu</a>
         </div>
-        <a href="#news">dropdown</a>
-        <a href="#contact">placeholder</a>
-        <div class="topnav-right">
-            <a href="#search"></a>
-            <a href="#about"></a>
+        <div class="logo">
+            <a href="#home"><span style="color: red; font-family:Times New Roman; font-size: 30px;" ><b>Exit 87 BBQ</b></span></a>
         </div>
     </div>
-<div style="padding-left:16px">
-</div>
-
-<div class="footer">
-    <p>Footer</p>
-</div>
-      
 </body>
 </html>
