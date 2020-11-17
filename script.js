@@ -4,7 +4,6 @@
  * Copyright 2013, Licensed GPL & MIT
  *
 */
-
 $.fn.circleType = function(options) {
 
     var settings = {
@@ -149,12 +148,6 @@ $.fn.circleType = function(options) {
         }
     });
 };
-
-
-
-
-
-
 
 $('#curved1').circleType({position: 'absolute'});
 $('#curved2').circleType({position: 'absolute', dir: 1, radius: 200});
