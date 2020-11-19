@@ -151,3 +151,20 @@ $.fn.circleType = function(options) {
 
 $('#curved1').circleType({position: 'absolute'});
 $('#curved2').circleType({position: 'absolute', dir: 1, radius: 200});
+  
+function myFunction() {
+    document.getElementById("myMenu").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.menubtn')) {
+      var dropdowns = document.getElementsByClassName("menu-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }

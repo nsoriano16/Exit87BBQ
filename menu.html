@@ -41,11 +41,11 @@
             text-decoration: none;
         }
 
-        .menu {
+        .dropdown {
             float: left;
         }
 
-        .menu .menubtn {
+        .dropdown .dropdownbtn {
             font-size: 16px;  
             border: none;
             outline: none;
@@ -54,7 +54,7 @@
             display: block;
         }
 
-        .menu a {
+        .dropdown a {
             float: none;
             color: gray;
             text-align: center;
@@ -62,7 +62,7 @@
             font-size: 16px;
         }
 
-        .menu a:hover {
+        .dropdown a:hover {
             background-color: gainsboro;
             color: gray;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -76,7 +76,7 @@
             transform: translate(-50%, -50%)
         }
 
-        .menu-content {
+        .dropdown-content {
             display: none;
             position: absolute;
             background-color: gainsboro;
@@ -85,7 +85,7 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         }
 
-        .menu-content a{
+        .dropdown-content a{
             float: none;
             color: gray;
             text-decoration: none;
@@ -93,15 +93,15 @@
             text-align: left;
         }
 
-        .menu-content a:hover {
+        .dropdown-content a:hover {
             background-color: white;
         }
 
-        .menu:hover .menu-content {
+        .dropdown:hover .dropdown-content {
             display: block;
         }
 
-        .menu .menubtn {
+        .dropdown .dropdownbtn {
             font-size: 16px;
             margin: 0; 
         }
@@ -119,30 +119,44 @@
             text-align: left;
         }
 
-        table {
-            border-collapse: collapse;
-            width: 75%;
-            background-color: white;
-            margin-top: 30px;
-            margin-left: 175px;
-        }
-
-        td {
-            padding: 7px;
-        }
-
-        th {
-            text-align: center;
-            padding: 15px;
-            color: red;
-            font-family: 'Times New Roman';
-        }
-
-        th:hover {
+        .menubtn {
+            background-color:white;
+            color: gray;
+            border: none;
+            cursor: pointer;
+            padding: 16px;
+            font-size: 16px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            margin: 30px;
+            overflow: hidden;
         }
 
+        .menubtn:hover, .menubtn:focus {
+            background-color: gainsboro;
+        }
 
+        .menu-content {
+            display: none;
+            padding: 16px;
+            position: inherit;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin: 30px;
+        }
+
+        .menu-content th {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .menu-content th:hover {
+            background-color: none;
+        }
+
+        .show {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -150,9 +164,9 @@
         <a class="facebook" href="facebook.com">
             <img src="facebook2.png" height: 10px; width: 10px; alt="facebook">
         </a>
-        <div class="menu">
-            <a class="menubtn">Dropdown</a>
-            <div class="menu-content">
+        <div class="dropdown">
+            <a class="dropdownbtn">Dropdown</a>
+            <div class="dropdown-content">
                 <a href="index.html" class="index.html">Home</a>
                 <a href="about.html" class="about.html">About Us</a>
                 <a href="contact.html" class="contact.html">Contact</a>
@@ -165,15 +179,21 @@
             <a href="index.html"><span style="color: red; font-family:Times New Roman; font-size: 30px;" ><div id="curved2"><b>Exit 87 BBQ</b></div></span></a>
         </div>
     </div>
-<table>
-    <tr>
-        <b><th>Breakfast</th>
-        <th>Lunch</th>
-        <th>Dinner</th></b>
-    </tr>
 
-    
-</table>
+        <div class="menu">
+        <button onclick="myFunction()" class="menubtn">Breakfast</button>
+        <button onclick="myFunction()" class="menubtn">Lunch</button>
+        <button onclick="myFunction()" class="menubtn">Dinner</button>
+        <button onclick="myFunction()" class="menubtn">Sunday Menu</button>
+            <div id="myMenu" class="menu-content">
+                <table>
+                    <tr>
+                        <th>food</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script><script  src="./script.js"></script>
 
