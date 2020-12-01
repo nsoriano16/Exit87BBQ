@@ -168,3 +168,20 @@ function myFunction() {
       }
     }
   }
+
+function lunchFunction() {
+    document.getElementById("lunchMenu").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.menubtn')) {
+      var dropdowns = document.getElementsByClassName("lunch-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
