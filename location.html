@@ -24,7 +24,7 @@
             margin: 0;
             height: 100%;
             font-family: Arial, Helvetica, sans-serif;
-            background-color:gainsboro; 
+            background-color: gainsboro;
         }
 
         .navbar {
@@ -110,15 +110,6 @@
             display: none;
         }
 
-        .facebook {
-            float: right;
-        }
-
-        .map {
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            margin: 30px;
-        }
-
         .exit87 {
             float: right;
             margin: 30px;
@@ -127,13 +118,39 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         }
 
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #wrapper {
+            padding-bottom: 2.5rem;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 12rem;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            font-size: 12px;
+        }
+
+        iframe {
+            margin: 30px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            position: absolute;
+        }
+
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a class="facebook" href="facebook.com">
-            <img src="facebook2.png" height: 10px; width: 10px; alt="facebook">
-        </a>
+
         <div class="menu">
             <a class="menubtn">Dropdown</a>
             <div class="menu-content">
@@ -150,8 +167,33 @@
         </div>
     </div>
 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.919776796169!2d-88.74720718474124!3d35.67897728019482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887c1c4dfb71bfc3%3A0x52fc616fbd3855eb!2sExit%2087%20BBQ!5e0!3m2!1sen!2sus!4v1607359040965!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12963.679103967175!2d-88.7450185!3d35.6789773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52fc616fbd3855eb!2sExit%2087%20BBQ!5e0!3m2!1sen!2sus!4v1608055856960!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <img class="exit87" src="img/exit87.jpg">
+
+    <div id="page-container">
+        <div id="wrapper">
+    
+        </div>
+            <footer>
+                <br>
+                Whether you're looking for dinner, bulk orders for a graduation party or catering 
+                <br>
+                for your company picnic,
+                Exit 87 BBQ is the place to call. You'll love the homemade food, 
+                <br>
+                old-fashioned recipes and care we take to smoke our own meats.
+                <br>
+                2049 Hwy 70 E
+                <br>
+                Jackson, TN 38305
+                <br>
+                <a href="location.html">Get Directions</a>
+                <br>
+                Main (731)-988-6222
+                <br>
+            </footer>
+        </div>
+    
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script><script  src="./script.js"></script>
 

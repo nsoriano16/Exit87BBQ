@@ -178,7 +178,40 @@
             background-color: none;
         }
 
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #wrapper {
+            padding-bottom: 2.5rem;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 12rem;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            font-size: 12px;
+        }
        
+        .menuone {
+            float: left;
+            margin-left: 200px;
+            margin-top: 200px;
+        }
+
+        .menutwo {
+            float: right;
+            margin-top: 200px;
+            margin-right: 200px;
+        }
+
     </style>
 </head>
 <body>
@@ -202,97 +235,33 @@
         </div>
     </div>
 
-        <button onclick="myFunction()" class="menubtn">Breakfast</button>
-        <div id="myMenu" class="menu-content">
-            <table>
-                <tr>
-                    <td>Sausage Egg & Cheese $5.00</td>
-                </tr>
-                <tr>
-                    <td>Chicken Egg & Cheese $6.00</td>
-                </tr>
-                <tr>
-                    <td>Bologna Egg & Cheese $4.00</td>
-                </tr>
-                <tr>
-                    <td>Egg & Cheese</td>
-                </tr>
-            </table>
-        </div>
+    <div id="page-container">
+        <div id="wrapper">
+    
+            <img class="menuone" src="img/exit87menu.jpg">
+            <img class="menutwo" src="img/exit87sundaymenu.jpg">
 
-        <button onclick="lunchFunction()" class="menubtn">Lunch</button>
-        <div id="lunchMenu" class="lunch-content">
-            <table>
-                <tr>
-                    <td>BBQ Sandwich (Reg) $5.00</td>
-                </tr>
-                <tr>
-                    <td>BBQ Sandwich (Jumbo) $6.00</td>
-                </tr>
-                <tr>
-                    <td>BBQ Plate (BBQ, bun, 2 sides) $9.00</td>
-                </tr>
-                <tr>
-                    <td>BBQ Family Pack $17.00
-                        (1 1/2 lbs BBQ, 8 buns, sauce & 2 sides)
-                    </td>
-                </tr>
-                <tr>
-                    <td>Super Family Pack $26.00
-                        (2 lbs, BBQ, 8 buns, Btl sauce & 4 sides)
-                    </td>
-                </tr>
-                <tr>
-                    <td>BBQ - per lb $9.00</td>
-                </tr>
-                <tr>
-                    <td>Ribs - St. Louis style - Rack $25.00
-                                                 1/2 Rack $14.00
-                                                 Plate $11.00
-                                                 (1/3 Rack & 2 sides)
-                    </td>
-                </tr>
-                <tr>
-                    <td>Rib Sandwich $8.00</td>
-                </tr>
-                <tr>
-                    <td>Grilled Chicken Sandwich $6.00</td>
-                </tr>
-                <tr>
-                    <td>Grilled Chicken Sandwich Plate $7.00</td>
-                </tr>
-                <tr>
-                    <td>BBQ Bologna Sandwich $3.00</td>
-                </tr>
-                <tr>
-                    <td>Hot Dog $3.00</td>
-                </tr>
-                <tr>
-                    <td>Slaw Dog $3.00</td>
-                </tr>
-                <tr>
-                    <td>Chili Dog $3.00</td>
-                </tr>
-                <tr>
-                    <td>Potato Dog $3.00</td>
-                </tr>
-                <tr>
-                    <td>Bowl of Chili $2.00</td>
-                </tr>
-                <tr>
-                    <td>Nachos $4.00</td>
-                </tr>
-                <tr>
-                    <td>BBQ Nachos $9.00</td>
-                </tr>
-                <tr>
-                    <td>Grilled Chicken Nachos $9.00</td>
-                </tr>
-                <tr>
-                    <td>Chili/Cheese Nachos $6.00</td>
-                </tr>
-            </table>
         </div>
+            <footer>
+                <br>
+                Whether you're looking for dinner, bulk orders for a graduation party or catering 
+                <br>
+                for your company picnic,
+                Exit 87 BBQ is the place to call. You'll love the homemade food, 
+                <br>
+                old-fashioned recipes and care we take to smoke our own meats.
+                <br>
+                2049 Hwy 70 E
+                <br>
+                Jackson, TN 38305
+                <br>
+                <a href="location.html">Get Directions</a>
+                <br>
+                Main (731)-988-6222
+                <br>
+            </footer>
+        </div>
+        
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script><script  src="./script.js"></script>
